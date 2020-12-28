@@ -2,6 +2,7 @@
 * HashToggle
 * Version : 1.0
 * Author : Sehyun oh
+* Github : https://github.com/selosele/hashToggle
 **/
 
 if (typeof jQuery === "undefined") throw new Error("HashToggle requires jQuery.");
