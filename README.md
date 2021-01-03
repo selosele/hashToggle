@@ -75,7 +75,7 @@ $(function() {
 ```javascript
 $("[href='#foo']").on("mouseover mouseout", function(event) {
     event.preventDefault();
-    $(this.hash).fadeToggle(600).stop().toggleClass("active");
+    $(this.hash).stop().fadeToggle(600).toggleClass("active");
     $("body").toggleClass("on");
 });
 ```
