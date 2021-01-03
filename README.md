@@ -1,6 +1,6 @@
 <h1>hashToggle.js</h1>
 
-a 태그의 href 속성값과 매칭되는 요소에 JS 작성을 간단하게 해결해주는 jQuery 플러그인.
+a 태그의 href 속성값과 일치하는 ID값을 가진 요소에 JS 작성을 간단하게 해결해주는 jQuery 플러그인.
 
 <h2>목차</h2>
 
