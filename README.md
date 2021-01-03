@@ -1,5 +1,7 @@
 <h1>hashToggle.js</h1>
 
+a 태그의 href 속성값과 매칭되는 요소에 JS 작성을 간단하게 해결해주는 jQuery 플러그인.
+
 <h2>목차</h2>
 
 - [의존성 정보](#%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A0%95%EB%B3%B4)
@@ -8,8 +10,6 @@
 - [예제](#%EC%98%88%EC%A0%9C)
     - [afterEvent 옵션 사용 시 다중 이벤트 처리법](#afterevent-%EC%98%B5%EC%85%98-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EB%8B%A4%EC%A4%91-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B2%98%EB%A6%AC%EB%B2%95)
 - [저작권](#%EC%A0%80%EC%9E%91%EA%B6%8C)
-
-a 태그의 href 속성값과 매칭되는 요소에 JS 작성을 간단하게 해결해주는 jQuery 플러그인.
 
 ## 의존성 정보
 
