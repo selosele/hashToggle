@@ -21,7 +21,7 @@ $(function() {
         animateStop: false,
         toggleClass: "active",
         afterEvent: function(event) {
-            $("body").toggleClass("test");
+            $("body").toggleClass("on");
         }
     });
 });
@@ -38,25 +38,48 @@ $(function() {
 |toggleClass|문자열|null|toggle할 클래스명|
 |addClass|문자열|null|추가할 클래스명|
 |removeClass|문자열|null|삭제할 클래스명|
-|afterEvent|함수|null|이벤트 발생 후 실행될 콜백함수. event 매개변수를 기본값으로 가지고 있음.|
+|afterEvent|함수|null|이벤트 발생 후 실행될 콜백함수. 기본 매개변수 event를 받아올 일이 없어도 명시 필요.|
 
 ## 예제
 
 ```html
-<a href="#foo">foo</a>
+<a href="#foo">foo anchor</a>
 
 <div id="foo">foo div</div>
 ```
 
 ```javascript
-$("[href='#foo']").hashToggle({
-    event: "mouseover mouseout",
-    action: "fadeToggle",
-    duration: 600,
-    animateStop: false,
-    toggleClass: "active",
-    afterEvent: function(event) {
-        $("body").toggleClass("test");
-    }
+$(function() {
+    $("[href='#foo']").hashToggle({
+        event: "mouseover mouseout",
+        action: "fadeToggle",
+        duration: 600,
+        animateStop: false,
+        toggleClass: "active",
+        afterEvent: function(event) {
+            $("body").toggleClass("on");
+        }
+    });
+});
+```
+
+### afterEvent 옵션 사용 시 다중 이벤트 처리법
+
+```event.type```으로 분기 처리를 해주면 된다.
+
+```javascript
+$(function() {
+    $("[href='#foo']").hashToggle({
+        event: "mouseover mouseout",
+        afterEvent: function(event) {
+            if (event.type === "mouseover") {
+                $("body").addClass("on");
+            }
+
+            if (event.type === "mouseout") {
+                $("body").removeClass("on");
+            }
+        }
+    });
 });
 ```
