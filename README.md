@@ -73,10 +73,12 @@ $(function() {
 다음 코드는 플러그인 없이 작성한 것으로, 위 코드와 기능 상 동일함.
 
 ```javascript
-$("[href='#foo']").on("mouseover mouseout", function(event) {
-    event.preventDefault();
-    $(this.hash).stop().fadeToggle(600).toggleClass("active");
-    $("body").toggleClass("on");
+$(function() {
+    $("[href='#foo']").on("mouseover mouseout", function(event) {
+        event.preventDefault();
+        $(this.hash).stop().fadeToggle(600).toggleClass("active");
+        $("body").toggleClass("on");
+    });
 });
 ```
 
