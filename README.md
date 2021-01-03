@@ -7,7 +7,7 @@ a 태그의 href 속성값과 일치하는 ID값을 가진 요소에 JS 작성�
 - [의존성 정보](#%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A0%95%EB%B3%B4)
 - [사용법](#%EC%82%AC%EC%9A%A9%EB%B2%95)
 - [세팅](#%EC%84%B8%ED%8C%85)
-- [예제](#%EC%98%88%EC%A0%9C)
+- [사용 예시](#%EC%82%AC%EC%9A%A9-%EC%98%88%EC%8B%9C)
     - [afterEvent 옵션 사용 시 다중 이벤트 처리법](#afterevent-%EC%98%B5%EC%85%98-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EB%8B%A4%EC%A4%91-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B2%98%EB%A6%AC%EB%B2%95)
 - [저작권](#%EC%A0%80%EC%9E%91%EA%B6%8C)
 
@@ -48,7 +48,7 @@ $(function() {
 |removeClass|문자열|null|삭제할 클래스명|
 |afterEvent|함수|null|이벤트 발생 후 실행될 콜백함수. 기본 매개변수는 event.|
 
-## 예제
+## 사용 예시
 
 ```html
 <a href="#foo">foo anchor</a>
