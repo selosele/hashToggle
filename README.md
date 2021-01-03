@@ -27,7 +27,6 @@ $(function() {
         event: "mouseover mouseout",
         action: "fadeToggle",
         duration: 600,
-        animateStop: false,
         toggleClass: "active",
         afterEvent: function(event) {
             $("body").toggleClass("on");
@@ -63,12 +62,18 @@ $(function() {
         event: "mouseover mouseout",
         action: "fadeToggle",
         duration: 600,
-        animateStop: false,
         toggleClass: "active",
         afterEvent: function(event) {
             $("body").toggleClass("on");
         }
     });
+});
+
+// 다음 코드는 플러그인 없이 작성한 것으로, 위 코드와 기능 상 동일.
+$("[href='#foo']").on("mouseover mouseout", function(event) {
+    event.preventDefault();
+    $(this.hash).fadeToggle(600).stop().toggleClass("active");
+    $("body").toggleClass("on");
 });
 ```
 
