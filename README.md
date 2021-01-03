@@ -38,7 +38,7 @@ $(function() {
 |toggleClass|문자열|null|toggle할 클래스명|
 |addClass|문자열|null|추가할 클래스명|
 |removeClass|문자열|null|삭제할 클래스명|
-|afterEvent|함수|null|이벤트 발생 후 실행될 콜백함수. 기본 매개변수 event를 받아올 일이 없어도 명시 필요.|
+|afterEvent|함수|null|이벤트 발생 후 실행될 콜백함수. 기본 매개변수는 event.|
 
 ## 예제
 
